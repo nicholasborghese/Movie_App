@@ -8,7 +8,11 @@ module.exports = function(environment) {
     rootURL: '/',
     locationType: 'auto',
     firebase: {
+<<<<<<< HEAD
       apiKey: "API KEY GOES HERE",
+=======
+      apiKey: "AIzaSyD_2NeVSPu-cBP6y3xtpVCKk_ludE6qWdM",
+>>>>>>> f56c37bc0df74f166cda642a685f1a0b227545f3
       authDomain: "movie-favorites-6893b.firebaseapp.com",
       databaseURL: "https://movie-favorites-6893b.firebaseio.com",
       projectId: "movie-favorites-6893b",
