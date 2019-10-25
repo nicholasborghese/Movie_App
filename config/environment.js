@@ -7,6 +7,15 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
+    firebase: {
+      apiKey: "AIzaSyD_2NeVSPu-cBP6y3xtpVCKk_ludE6qWdM",
+      authDomain: "movie-favorites-6893b.firebaseapp.com",
+      databaseURL: "https://movie-favorites-6893b.firebaseio.com",
+      projectId: "movie-favorites-6893b",
+      storageBucket: "movie-favorites-6893b.appspot.com",
+      messagingSenderId: "640734523332",
+      appId: "1:640734523332:web:dc13a2a75837698e557e91"
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

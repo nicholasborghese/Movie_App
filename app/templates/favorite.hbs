@@ -1,0 +1,14 @@
+<h2>Favorites</h2>
+<ol>
+  {{#each model as |favorite|}}
+    <li>
+      <LinkTo @route="detail" @model={{favorite.imdbID}}>
+        {{favorite.name}}
+      </LinkTo>
+    </li>
+  {{else}}
+    <li>You got no favs</li>
+  {{/each}}
+</ol>
+
+{{outlet}}

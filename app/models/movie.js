@@ -6,5 +6,13 @@ export default Model.extend({
     Year: DS.attr('string'),
     imdbID: DS.attr('string'),
     Type: DS.attr('string'),
-    Poster: DS.attr('string')
+    Rated: DS.attr('string'),
+    Runtime: DS.attr('string'),
+    Genre: DS.attr('string'),
+    Director: DS.attr('string'),
+    Actors: DS.attr('string'),
+    Poster: DS.attr('string'),
+    Plot: DS.attr('string'),
+    imdbRating: DS.attr('string'),
+    imdbVotes: DS.attr('string')
 });
