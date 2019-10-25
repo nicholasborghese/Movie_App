@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 'use strict';
 
 module.exports = function(environment) {
@@ -6,6 +7,15 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
+    firebase: {
+      apiKey: "API KEY GOES HERE",
+      authDomain: "movie-favorites-6893b.firebaseapp.com",
+      databaseURL: "https://movie-favorites-6893b.firebaseio.com",
+      projectId: "movie-favorites-6893b",
+      storageBucket: "movie-favorites-6893b.appspot.com",
+      messagingSenderId: "640734523332",
+      appId: "1:640734523332:web:dc13a2a75837698e557e91"
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -45,6 +55,13 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
+  }
+
+  try {
+    const custom = require('./custom-config');
+    ENV.OMDB_API_KEY = custom.config.OMDB_API_KEY;
+  } catch (err) {
+    console.log('config/custom-config.js not found');
   }
 
   return ENV;
